@@ -7,7 +7,7 @@ const mmq = require("gulp-merge-media-queries"); // メディアクエリをマ�
 const postcss = require("gulp-postcss"); // CSSの変換処理を行うためのモジュール
 const autoprefixer = require("autoprefixer"); // ベンダープレフィックスを自動的に追加するためのモジュール
 const cssdeclsort = require("css-declaration-sorter"); // CSSの宣言をソートするためのモジュール
-const cssnext = require("postcss-cssnext"); // 最新のCSS構文を使用可能にするためのモジュール
+const postcssPresetEnv = require("postcss-preset-env"); // 最新のCSS構文を使用可能にするためのモジュール
 const rename = require("gulp-rename"); // ファイル名を変更するためのモジュール
 const sourcemaps = require("gulp-sourcemaps"); // ソースマップを作成するためのモジュール
 const babel = require("gulp-babel"); // ES6+のJavaScriptをES5に変換するためのモジュール
@@ -21,7 +21,7 @@ const changed = require("gulp-changed"); // 変更されたファイルのみを
 const del = require("del"); // ファイルやディレクトリを削除するためのモジュール
 const webp = require('gulp-webp');//webp変換
 
-const themeName = "WordPressTheme"; // WordPress theme name
+const themeName = "unyuroren"; // WordPress theme name
 // 読み込み先
 const srcPath = {
   json: "./**/*.json",
@@ -77,13 +77,20 @@ const cssSass = () => {
       // ベンダープレフィックスを自動付与
       .pipe(
         postcss([
+          postcssPresetEnv(),
           autoprefixer({
             grid: true,
           }),
         ])
       )
       // CSSプロパティをアルファベット順にソートし、未来のCSS構文を使用可能に
-      .pipe(postcss([cssdeclsort({ order: "alphabetical" }), cssnext(browsers)]))
+      .pipe(
+        postcss([cssdeclsort({
+          order: "alphabetical"
+        })]
+        ),
+        postcssPresetEnv({ browsers: 'last 2 versions' })
+      )
       // メディアクエリを統合
       .pipe(mmq())
       // ソースマップを書き出し
@@ -215,9 +222,9 @@ const jsBabel = () => {
 // ブラウザーシンク
 const browserSyncOption = {
   notify: false,
-  server: "../dist/", // ローカルサーバーのルートディレクトリ
+  // server: "../dist/", // ローカルサーバーのルートディレクトリ
   //WordPressの場合は↓を有効にする。その場合、↑(server)はコメントアウトする。
-  // proxy: "http://test.local/", // ローカルサーバーのURL（WordPress）
+  proxy: "http://unyuroren.local/", // ローカルサーバーのURL（WordPress）
 };
 const browserSyncFunc = () => {
   browserSync.init(browserSyncOption);
