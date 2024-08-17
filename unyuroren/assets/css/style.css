@@ -1,0 +1,271 @@
+.u-desktop {
+	display: none;
+}
+
+/* リキッドレイアウト対応 */
+
+html {
+	font-size: 16px;
+}
+
+/* pcの電話番号発信対応 */
+
+a {
+	-webkit-text-decoration: none;
+	color: inherit;
+	text-decoration: none;
+	transition: opacity 0.3s;
+}
+
+/* hover指定できるPCを想定したスタイル */
+
+/* hoverが使えないタッチ端末を想定した装飾 */
+
+body {
+	word-wrap: break-word;
+	word-wrap: break-word;
+	display: flex;
+	flex-direction: column;
+	font-family: "";
+	font-weight: 400;
+	line-height: 1.5;
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+}
+
+main {
+	flex: 1;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+/* Remove default padding */
+
+ul,
+ol {
+	padding: 0;
+}
+
+/* Remove default margin */
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Set core root defaults */
+
+html {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+
+body {
+	line-height: 1.5;
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+
+ul,
+ol {
+	list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+
+a:not([class]) {
+	-webkit-text-decoration-skip: ink;
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+
+img {
+	display: block;
+	max-width: 100%;
+	width: 100%;
+}
+
+/* Natural flow and rhythm in articles by default */
+
+article > * + * {
+	margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+
+img:not([alt]) {
+	filter: blur(10px);
+}
+
+/* フォームリセット */
+
+input,
+button,
+select,
+textarea {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background: transparent;
+	border: none;
+	border-radius: 0;
+	font: inherit;
+	outline: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+input[type=checkbox],
+input[type=radio] {
+	display: none;
+}
+
+input[type=submit],
+input[type=button],
+label,
+button,
+select {
+	cursor: pointer;
+}
+
+select::-ms-expand {
+	display: none;
+}
+
+.c-btn {
+	background-color: black;
+	color: yellow;
+	padding: 0.625rem 2.5rem;
+}
+
+.c-test {
+	color: red;
+	font-size: 1.25rem;
+}
+
+.c-title {
+	font-size: 10px;
+}
+
+.l-footer {
+	position: sticky;
+	top: 100vh;
+}
+
+.l-inner {
+	height: inherit;
+	margin: 0 auto;
+	max-width: 33.75rem;
+	padding-left: 20px;
+	padding-right: 20px;
+	width: 100%;
+}
+
+.p-test {
+	color: red;
+	font-size: 1.25rem;
+}
+
+@media (hover: hover) {
+
+a:hover {
+	opacity: 0.8;
+}
+
+}
+
+@media (hover: none) {
+
+a:active {
+	opacity: 0.8;
+}
+
+}
+
+@media screen and (min-width: 768px) {
+
+.u-desktop {
+	display: block;
+}
+
+.u-mobile {
+	display: none;
+}
+
+html {
+	font-size: 1.4545454545vw;
+}
+
+a[href^="tel:"] {
+	pointer-events: none;
+}
+
+.c-test {
+	color: green;
+	font-size: 3.125rem;
+}
+
+.c-title {
+	font-size: 20px;
+}
+
+.l-inner {
+	max-width: 1150px;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+
+.p-test {
+	color: green;
+	font-size: 3.125rem;
+}
+
+}
+
+@media (min-width: 1100px) {
+
+html {
+	font-size: 16px;
+}
+
+}
+
+@media (max-width: 375px) {
+
+html {
+	font-size: 4.2666666667vw;
+}
+
+}
+
+
+/*# sourceMappingURL=style.css.map */
