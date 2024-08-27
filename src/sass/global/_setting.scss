@@ -2,7 +2,7 @@
 
 // インナー幅設定
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$l-inner: 1100px;
+$l-inner: 1000px;
 // ※キュンパス幅ではなくインナーの幅を指す
 
 // 余白
@@ -14,22 +14,40 @@ $padding-sp: 20px;
 // フォント設定
 ////////////////////
 
-$base-font-family: "";
-$second-font-family: "";
+:root {
+  --base-font: "Zen Kaku Gothic New", sans-serif;
+  --second-font: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 // ※検証ツールでしっかり反映されているか確認する
 
 
 // フォントウェイト
-$light: 300;
-$normal: 400;
-$medium: 500;
-$semi-bold: 400;
-$bold: 700;
+:root {
+  --light: 300;
+  --normal: 400;
+  --medium: 500;
+  --semi-bold: 600;
+  --bold: 700;
+}
 
 ////////////////////
 // 色の指定
 ////////////////////
 
 //色指定（共通性のあるものは出来る限り指定すると良い）
-$black: #111;
-$white: #fff;
+:root {
+  --black: #333;
+  --white: #fff;
+  --main: #00561F;
+  --light-green: #A5D4AD;
+  --light-beige: #FAF2EE;
+  --light-gray: #E8E8E8;
+  --gray: #707070;
+  --gray2: #D7D7D7;
+  --dark-blue: #003567;
+  --link: #4182B4;
+  --bg-light-gray: #F5F5F5;
+  --bg-light-green: #EBF6EF;
+  --bg-light-blue: #E1EAFA;
+}
