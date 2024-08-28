@@ -10,7 +10,7 @@
 function my_script_init()
 {
   // Google Fonts
-  wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&display=swap"', array(), null);
+  wp_enqueue_style('google-fonts', '//fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@500;700&family=Anton&family=Roboto:wght@700&display=swap"', array(), null);
 
   // WordPressがデフォルトで提供するjQueryは使用しない
   wp_deregister_script('jquery');

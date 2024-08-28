@@ -16,7 +16,8 @@ $padding-sp: 20px;
 
 :root {
   --base-font: "Zen Kaku Gothic New", sans-serif;
-  --second-font: "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --anton-font: "Anton", sans-serif;
+  --roboto-font: "Roboto", sans-serif;
 }
 
 // ※検証ツールでしっかり反映されているか確認する
@@ -48,6 +49,7 @@ $padding-sp: 20px;
   --dark-blue: #003567;
   --link: #4182B4;
   --bg-light-gray: #F5F5F5;
+  --bg-drawer: #F7F7F7;
   --bg-light-green: #EBF6EF;
   --bg-light-blue: #E1EAFA;
 }

@@ -1,0 +1,101 @@
+@use "global" as *;
+
+:where(.wp-block-columns.is-layout-flex) {
+  gap: rem(50);
+}
+
+h1:not([data-logo="true"]) {
+  font-size: rem(20);
+  font-weight: var(--bold);
+  line-height: 1.4;
+  letter-spacing: 0.05em;
+  padding-bottom: rem(17);
+  position: relative;
+  display: inline-grid;
+  width: fit-content;
+  place-items: center;
+
+  @include mq("md") {
+    font-size: rem(40);
+    letter-spacing: initial;
+  }
+}
+
+h1:not([data-logo="true"])::after {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  content: "";
+  background-color: var(--main);
+  width: rem(40);
+  height: rem(4);
+  border-radius: 100vh;
+}
+
+h2 {
+  font-size: rem(18);
+  font-weight: var(--bold);
+  line-height: 1.5;
+  letter-spacing: 0.05em;
+  padding-bottom: rem(10);
+  border-bottom: rem(3) solid var(--light-green);
+
+  @include mq("md") {
+    font-size: rem(32);
+    letter-spacing: initial;
+    border-width: rem(5);
+  }
+}
+
+h3 {
+  font-size: rem(16);
+  font-weight: var(--bold);
+  line-height: 1.5;
+  padding-bottom: rem(10);
+  border-bottom: rem(3) solid var(--main);
+
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+h4 {
+  font-size: rem(16);
+  font-weight: var(--bold);
+  line-height: 1.5;
+  padding-block: rem(13);
+  padding-left: rem(40);
+  position: relative;
+
+  @include mq("md") {
+    font-size: rem(24);
+    padding-block: rem(16);
+    padding-left: rem(50);
+  }
+}
+
+h4::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--light-green);
+  width: rem(20);
+  height: 100%;
+
+  @include mq("md") {
+    width: rem(24);
+  }
+}
+
+blockquote {
+  background-color: var(--bg-light-gray);
+  border-radius: rem(10);
+  padding: rem(30) rem(20);
+  font-size: rem(16);
+  line-height: 2;
+
+  @include mq("md") {
+    padding-inline: rem(30);
+  }
+}

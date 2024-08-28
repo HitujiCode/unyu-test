@@ -3,29 +3,50 @@
 jQuery(function ($) {
   // この中であればWordpressでも「$」が使用可能になる
   // ハンバーガーメニュー
-  $(function () {
-    $(".js-hamburger").click(function () {
-      $(this).toggleClass("is-open");
-      $(".js-drawer").fadeToggle();
-    });
+  $(document).ready(function () {
+    var $hamburger = $(".js-hamburger");
+    var $drawer = $(".js-drawer");
+    function closeDrawer() {
+      $("body").removeClass("is-fixed");
+      $hamburger.removeClass("is-open").attr({
+        "aria-expanded": "false",
+        "aria-label": "メニューを開く"
+      });
+      $drawer.removeClass("is-open").attr("aria-hidden", "true");
+    }
+    function openDrawer() {
+      $("body").addClass("is-fixed");
+      $hamburger.addClass("is-open").attr({
+        "aria-expanded": "true",
+        "aria-label": "メニューを閉じる"
+      });
+      $drawer.addClass("is-open").attr("aria-hidden", "false");
+    }
+    if ($hamburger.length && $drawer.length) {
+      $hamburger.on("click", function () {
+        if ($drawer.hasClass("is-open")) {
+          closeDrawer();
+        } else {
+          openDrawer();
+        }
+      });
+      $drawer.find("a[href]").on("click", function () {
+        closeDrawer();
+      });
 
-    // ドロワーナビのaタグをクリックで閉じる
-    $(".js-drawer a[href]").on("click", function () {
-      $(".js-hamburger").removeClass("is-open");
-      $(".js-drawer").fadeOut();
-    });
-
-    // resizeイベント
-    $(window).on('resize', function () {
-      if (window.matchMedia("(min-width: 768px)").matches) {
-        $(".js-hamburger").removeClass("is-open");
-        $(".js-drawer").fadeOut();
-      }
-    });
+      // matchMediaを使用してメディアクエリの変更を検出
+      var mediaQuery = window.matchMedia("(min-width: 768px)");
+      mediaQuery.addEventListener("change", function (e) {
+        if (e.matches && $drawer.hasClass("is-open")) {
+          closeDrawer();
+        }
+      });
+    }
   });
 
   // アコーディオン
   $('.js-drawer-accordion').on('click', function () {
+    $('.js-drawer-accordion').not(this).removeClass('is-open').next().slideUp();
     $(this).next().slideToggle();
     $(this).toggleClass('is-open');
   });

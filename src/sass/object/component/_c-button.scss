@@ -1,0 +1,104 @@
+@use "global" as *;
+
+.c-button {
+  display: inline-grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: rem(16);
+  align-items: center;
+  text-align: center;
+  padding: rem(10) rem(24);
+  font-size: rem(16);
+  font-weight: var(--bold);
+  color: var(--main);
+  line-height: calc(29/16);
+  text-align: center;
+  border-radius: rem(57);
+  border: rem(2) solid var(--main);
+  width: min(100%, rem(300));
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  @include mq("md") {
+    padding: rem(22) rem(72);
+    font-size: rem(20);
+    line-height: 1.5;
+    border-width: rem(3);
+    width: min(100%, rem(600));
+  }
+}
+
+.c-button::before {
+  content: "";
+}
+
+.c-button::after {
+  content: "";
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  width: rem(18);
+  aspect-ratio: 18/12;
+  justify-self: flex-end;
+  mask-image: url(../images/common/arrow.svg);
+}
+
+@media (any-hover: hover) {
+  .c-button:hover {
+    background-color: var(--main);
+    color: var(--white);
+  }
+}
+
+.c-button--blank {
+  font-size: rem(14);
+  line-height: 1.5;
+  padding: rem(14) rem(40);
+
+  @include mq("md") {
+    padding-block: rem(22);
+  }
+}
+
+.c-button--blank::after {
+  mask-image: url(../images/common/icon-blank.svg);
+  width: rem(18);
+  aspect-ratio: 1/1;
+
+  @include mq("md") {
+    width: rem(20);
+  }
+}
+
+.c-button--anchor {
+  @include mq("md") {
+    width: min(100%, rem(475));
+    padding-inline: rem(36);
+  }
+}
+
+.c-button--anchor::after {
+  mask-image: url(../images/common/arrow.svg);
+  transform: rotate(90deg);
+}
+
+.c-button--blank2 {
+  width: min(100%, rem(325));
+  gap: rem(22);
+
+  @include mq("md") {
+    width: min(100%, rem(475));
+    padding-inline: rem(36);
+  }
+}
+
+.c-button--blank2::after {
+  mask-image: url(../images/common/icon-blank.svg);
+  width: rem(11);
+  aspect-ratio: 1/1;
+  justify-self: flex-start;
+
+  @include mq("md") {
+    width: rem(20);
+    justify-self: flex-end;
+  }
+}
