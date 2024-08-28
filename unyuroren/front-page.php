@@ -5,7 +5,7 @@
   <div class="p-common-block">
     <div class="p-common-block__inner l-inner">
       <figure class="p-common-block__img">
-        <img src="./assets/images/top/mv1.jpg" alt="" width="400" height="248" />
+        <img src="http://unyuroren.local/wp-content/themes/unyuroren/assets/images/top/mv1.jpg" alt="" width="400" height="248" />
       </figure>
       <p class="p-common-block__text">　「改善基準告示」とは自動車運転者の労働時間等の労働条件の改善をするために労働大臣が1989年2月に告示したものの略称です。さらに一部改正され、現行基準は2024年4月1日から適用されています。<br>
         　改善基準告示は交通安全を確保するために運転者の「拘束時間」「休息期間」「運転時間」「時間外や休日労働」などを規制しているもので、トラック・バス・タクシーの業種毎に基準を定めています。<br>
@@ -40,17 +40,17 @@
     <br>
     <br>
 
-    <a href="" target="_blank" class="c-button-blank">外部リンク</a>
+    <a href="" target="_blank" class="c-button c-button-blank">外部リンク</a>
 
     <br>
     <br>
 
-    <a href="" class="c-button-anchor">アンカーリンク</a>
+    <a href="" class="c-button c-button-anchor">アンカーリンク</a>
 
     <br>
     <br>
 
-    <a href="" target="_blank" class="c-button-login">会員ページログイン</a>
+    <a href="" target="_blank" class="c-button c-button-blank2">会員ページログイン</a>
 
     <br>
     <br>
@@ -73,10 +73,44 @@
     <br>
 
     <div class="c-frame-border">
-      <p class="c-frame-border__title"><span></span></p>
-      <p class="c-frame-border__text"></p>
+      <p class="c-frame-border__title">記事作成「７つの心得」</p>
+      <p class="c-frame-border__text">①重要な記事を除いては400字程度、② センテンスは長くとも60字以内を目標に、③段落は10行以内、④ 接続助詞（「～で」「～だが」）を多用しない、⑤ 接続詞「また」「そして」「さらに」「しかし」を多用しない、⑥難しい言葉、漢字を使わない、⑦ 「です・ます」と「だ・である」を混用しない</p>
+      <figure class="c-frame-border__img l-img-small">
+        <img src="http://unyuroren.local/wp-content/themes/unyuroren/assets/images/pr/howto001_02.jpg" alt="" />
+      </figure>
+    </div>
+
+    <div class="c-frame-border">
+      <p class="c-frame-border__title">記事作成「７つの心得」</p>
+      <p class="c-frame-border__sub-title">記事作成「７つの心得」</p>
+      <p class="c-frame-border__text">①重要な記事を除いては400字程度、② センテンスは長くとも60字以内を目標に、③段落は10行以内、④ 接続助詞（「～で」「～だが」）を多用しない、⑤ 接続詞「また」「そして」「さらに」「しかし」を多用しない、⑥難しい言葉、漢字を使わない、⑦ 「です・ます」と「だ・である」を混用しない</p>
       <figure class="c-frame-border__img">
-        <img src="./assets/images/pr/howto001_02.jpg" alt="" width="400" height="248" />
+        <img src="http://unyuroren.local/wp-content/themes/unyuroren/assets/images/top/mv1.jpg" alt="" />
+      </figure>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="c-frame-green1">
+      <p class="c-frame-green1__num">1</p>
+      <p class="c-frame-green1__title">労働条件の維持・向上</p>
+      <p class="c-frame-green1__text">・賃金引き上げや一時金（ボーナス）について統一要求などの取り組みを行います。<br>
+        ・産業別最低賃金、企業内最低賃金の協定化を行います。</p>
+      <figure class="c-frame-green1__img">
+        <img src="http://unyuroren.local/wp-content/themes/unyuroren/assets/images/top/mv1.jpg" alt="" width="295" height="182" />
+      </figure>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="c-frame-green2">
+      <p class="c-frame-green2__num">1</p>
+      <p class="c-frame-green2__title">医療品・医薬品が手に入りにくくなる可能性があります</p>
+      <p class="c-frame-green2__text">病院や薬局、ドラッグストアへの医療品・医薬品などの納品は、ほとんどトラックが行っています。</p>
+      <figure class="c-frame-green2__img">
+        <img src="http://unyuroren.local/wp-content/themes/unyuroren/assets/images/top/mv1.jpg" alt="" width="295" height="182" />
       </figure>
     </div>
 

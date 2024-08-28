@@ -92,6 +92,10 @@ body {
   }
 }
 
+body.is-fixed {
+  overflow: hidden;
+}
+
 main {
   flex: 1;
 }

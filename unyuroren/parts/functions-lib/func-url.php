@@ -18,9 +18,9 @@ function assets_path()
   echo esc_url(get_template_directory_uri() . '/assets');
 }
 /* 画像パスを返す */
-function img_path()
+function img_path($path = '')
 {
-  echo esc_url(get_template_directory_uri() . '/assets/images');
+  echo esc_url(get_template_directory_uri() . '/assets/images' . $path);
 }
 /* mediaフォルダへのURL */
 function uploads_path()
