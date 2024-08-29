@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.c-pagetop {
+  position: fixed;
+  bottom: 3%;
+  right: 2%;
+  z-index: 100;
+  padding: initial;
+}
+
+.c-pagetop::before {
+  content: "";
+  display: block;
+  width: rem(50);
+  aspect-ratio: 1/1;
+  background-image: url(../images/common/pagetop.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  transition: background-image 0.3s;
+}
+
+@media (any-hover: hover) {
+  .c-pagetop:hover::before {
+    background-image: url(../images/common/pagetop-hover.svg);
+  }
+}

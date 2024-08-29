@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-pickup {
+  margin-top: rem(27);
+
+  @include mq("md") {
+    margin-top: rem(70);
+  }
+}

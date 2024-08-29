@@ -11,11 +11,11 @@
 
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
-  <header class="p-header l-header">
+  <header class="p-header l-header js-header">
     <div class="p-header__inner">
       <div class="p-header__wrapper">
         <a href="<?php page_path(); ?>" class="p-header__logo-wrap">
-          <h1 class="p-header__logo" data-logo="true">
+          <h1 class="p-header__logo">
             <img src="<?php img_path('/common/logo.svg') ?>" alt="運輸労連全日本運輸産業労働組合連合会">
           </h1>
           <figure class="p-header__truck">
@@ -50,7 +50,7 @@
             'modal' => [
               ['text' => '設立目的', 'modal_link' => 'info/about'],
               ['text' => '所在地', 'modal_link' => 'info/place'],
-              ['text' => '加盟組合一覧', 'modal_link' => 'https://www.unyuroren.or.jp/home/info/kameikumiai.htm'],
+              ['text' => '運輸労連 加盟組合一覧', 'modal_link' => 'https://www.unyuroren.or.jp/home/info/kameikumiai.htm'],
             ],
           ],
           [

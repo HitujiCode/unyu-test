@@ -524,6 +524,7 @@
 
 .p-header__drawer-accordion-title.is-open {
   color: var(--main);
+  background-color: var(--bg-light-green);
 }
 
 .p-header__drawer-accordion-title::before {
@@ -543,6 +544,7 @@
   border-top: 1px solid var(--light-gray);
   border-left: rem(3) solid var(--main);
   padding-left: rem(22);
+  background-color: var(--bg-light-green);
 }
 
 .p-header__drawer-accordion-list a {
