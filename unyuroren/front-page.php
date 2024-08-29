@@ -1,120 +1,173 @@
 <?php get_header(); ?>
 
-<main>
+<main class="p-home">
 
-  <div class="p-common-block">
-    <div class="p-common-block__inner l-inner">
-      <figure class="p-common-block__img">
-        <img src="http://unyuroren.local/wp-content/themes/unyuroren/assets/images/top/mv1.jpg" alt="" width="400" height="248" />
-      </figure>
-      <p class="p-common-block__text">　「改善基準告示」とは自動車運転者の労働時間等の労働条件の改善をするために労働大臣が1989年2月に告示したものの略称です。さらに一部改正され、現行基準は2024年4月1日から適用されています。<br>
-        　改善基準告示は交通安全を確保するために運転者の「拘束時間」「休息期間」「運転時間」「時間外や休日労働」などを規制しているもので、トラック・バス・タクシーの業種毎に基準を定めています。<br>
-        　プロドライバーとして一般運転者の模範とならなくてはなりません。そのため少なくともこれだけは「知り、守り、守らせ」交通事故を撲滅させましょう。</p>
+  <div class="p-mv">
+    <div class="p-mv__inner">
+      <div class="p-mv__container">
+        <div class="p-mv__swiper-wrap">
+          <div class="p-mv__swiper swiper js-mv-swiper">
+            <ul class="p-mv__wrapper swiper-wrapper">
+              <li class="p-mv__slide swiper-slide">
+                <figure class="p-mv__img">
+                  <img src="<?php img_path('/top/mv1.jpg') ?>" alt="トラック正面と運転する手元" />
+                </figure>
+                <figure class="p-mv__catch-img">
+                  <img src="<?php img_path('/top/mv1-catch.svg') ?>" alt="だれもが安心して働ける職場づくりをめざして" />
+                </figure>
+              </li>
+              <li class="p-mv__slide swiper-slide">
+                <figure class="p-mv__img">
+                  <img src="<?php img_path('/top/mv2.jpg') ?>" alt="演説者と聴衆" />
+                </figure>
+                <div class="p-mv__catch">
+                  <p class="p-mv__title">運輸労連第56回<br>定期大会開催</p>
+                </div>
+              </li>
+              <li class="p-mv__slide swiper-slide">
+                <figure class="p-mv__img">
+                  <img src="<?php img_path('/top/mv3.jpg') ?>" alt="アンケート用紙を記入している手元" />
+                </figure>
+                <div class="p-mv__catch">
+                  <p class="p-mv__title">ドライバーアンケート<br>調査結果報告書</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="p-mv__next swiper-button-next">
+            <img src="<?php img_path('/common/circle-arrow.svg') ?>" alt="次へ" />
+          </div>
+          <div class="p-mv__prev swiper-button-prev">
+            <img src="<?php img_path('/common/circle-arrow.svg') ?>" alt="前へ" />
+          </div>
+        </div>
+        <div class="p-mv__thumbnail swiper js-mv-thumbnail">
+          <ul class="p-mv__thumbnail-wrapper swiper-wrapper">
+            <li class="p-mv__thumbnail-slide swiper-slide">
+              <figure class="p-mv__thumbnail-img">
+                <img src="<?php img_path('/top/mv1.jpg') ?>" alt="トラック正面と運転する手元" />
+              </figure>
+              <figure class="p-mv__thumbnail-catch-img">
+                <img src="<?php img_path('/top/mv1-catch.svg') ?>" alt="だれもが安心して働ける職場づくりをめざして" />
+              </figure>
+            </li>
+            <li class="p-mv__thumbnail-slide swiper-slide">
+              <figure class="p-mv__thumbnail-img">
+                <img src="<?php img_path('/top/mv2.jpg') ?>" alt="演説者と聴衆" />
+              </figure>
+              <div class="p-mv__thumbnail-catch">
+                <p class="p-mv__thumbnail-title">運輸労連第56回<br>定期大会開催</p>
+              </div>
+            </li>
+            <li class="p-mv__thumbnail-slide swiper-slide">
+              <figure class="p-mv__thumbnail-img">
+                <img src="<?php img_path('/top/mv3.jpg') ?>" alt="アンケート用紙を記入している手元" />
+              </figure>
+              <div class="p-mv__thumbnail-catch">
+                <p class="p-mv__thumbnail-title">ドライバーアンケート<br>調査結果報告書</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 
-  <div class="l-inner">
+  <section class="p-news l-news">
+    <div class="p-news__inner l-inner">
+      <h2 class="p-news__title">活動報告</h2>
+      <div class="p-news__container">
+        <ul class="p-news__list">
+          <?php
+          $args = array(
+            'post_type' => 'post',
+            'posts_per_page' => 6,
+          );
+          $news_query = new WP_Query($args);
 
-    <a class="c-link-text" href="">リンクテキスト</a>
-
-    <br>
-    <br>
-
-    <h2>h2見出し</h2>
-
-    <br>
-    <br>
-
-    <h3>h3見出し</h3>
-
-    <br>
-    <br>
-
-    <h4>h4見出し</h4>
-
-    <br>
-    <br>
-
-    <a href="" class="c-button">内部リンク</a>
-
-    <br>
-    <br>
-
-    <a href="" target="_blank" class="c-button c-button-blank">外部リンク</a>
-
-    <br>
-    <br>
-
-    <a href="" class="c-button c-button-anchor">アンカーリンク</a>
-
-    <br>
-    <br>
-
-    <a href="" target="_blank" class="c-button c-button-blank2">会員ページログイン</a>
-
-    <br>
-    <br>
-
-    <a href="" class="c-link-arrow">調査活動</a>
-
-    <br>
-    <br>
-
-    <p class="c-frame">自動車運転の業務（ドライバー）に年960時間の上限規制が適用されます</p>
-
-    <br>
-    <br>
-
-    <blockquote>
-      　昨日の集会ではＡさんとＢさんが熱く意見を主張し、議論は多いに白熱したが、二人の主張が食い違っており、２時間という長丁場を経たが、議論は平行線を辿ったままで、ＡさんもＢさんも感情的になってしまい、最後まで結論は出なかった。
-    </blockquote>
-
-    <br>
-    <br>
-
-    <div class="c-frame-border">
-      <p class="c-frame-border__title">記事作成「７つの心得」</p>
-      <p class="c-frame-border__text">①重要な記事を除いては400字程度、② センテンスは長くとも60字以内を目標に、③段落は10行以内、④ 接続助詞（「～で」「～だが」）を多用しない、⑤ 接続詞「また」「そして」「さらに」「しかし」を多用しない、⑥難しい言葉、漢字を使わない、⑦ 「です・ます」と「だ・である」を混用しない</p>
-      <figure class="c-frame-border__img l-img-small">
-        <img src="http://unyuroren.local/wp-content/themes/unyuroren/assets/images/pr/howto001_02.jpg" alt="" />
-      </figure>
+          if ($news_query->have_posts()) :
+            while ($news_query->have_posts()) : $news_query->the_post();
+          ?>
+              <li class="p-news__item">
+                <?php get_template_part('parts/project/p-news-card') ?>
+              </li>
+          <?php
+            endwhile;
+            wp_reset_postdata();
+          else :
+            echo '<p class="p-news__text">お知らせはありません</p>';
+          endif;
+          ?>
+        </ul>
+        <div class="p-news__button">
+          <?php
+          $args = array(
+            'link' => '/news',
+            'text' => '活動報告をすべて見る',
+            'modifier' => 'small'
+          );
+          get_template_part('parts/component/c-button', null, $args);
+          ?>
+        </div>
+      </div>
     </div>
+  </section>
 
-    <div class="c-frame-border">
-      <p class="c-frame-border__title">記事作成「７つの心得」</p>
-      <p class="c-frame-border__sub-title">記事作成「７つの心得」</p>
-      <p class="c-frame-border__text">①重要な記事を除いては400字程度、② センテンスは長くとも60字以内を目標に、③段落は10行以内、④ 接続助詞（「～で」「～だが」）を多用しない、⑤ 接続詞「また」「そして」「さらに」「しかし」を多用しない、⑥難しい言葉、漢字を使わない、⑦ 「です・ます」と「だ・である」を混用しない</p>
-      <figure class="c-frame-border__img">
-        <img src="http://unyuroren.local/wp-content/themes/unyuroren/assets/images/top/mv1.jpg" alt="" />
-      </figure>
+  <section class="p-pickup l-pickup">
+    <div class="p-pickup__inner l-inner">
+      <h2 class="p-pickup__title">ピックアップ</h2>
+      <div class="p-pickup__container">
+        <ul class="p-pickup__list">
+          <li class="p-pickup__item">
+            <a href="" class="p-pickup__link">
+              <figure class="p-pickup__img">
+                <img src="<?php img_path('/top/banner1.png') ?>" alt="トラックドライバーの皆さんへ" />
+              </figure>
+              <p class="p-pickup__text">WEBアンケートのおねがい</p>
+            </a>
+          </li>
+          <li class="p-pickup__item">
+            <a href="" class="p-pickup__link">
+              <figure class="p-pickup__img">
+                <img src="<?php img_path('/top/banner2.jpg') ?>" alt="" />
+              </figure>
+              <p class="p-pickup__text">トラックを応援してください！</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <?php
+      $bannerItem = [
+        [
+          'img' => '/top/banner3.jpg',
+          'link' => 'https://www.jtuc-rengo.or.jp/action/saiteichingin/',
+          'alt' => '知るから始めよう、最低賃金',
+        ],
+        [
+          'img' => '/top/banner4.jpg',
+          'link' => 'https://www.mlit.go.jp/jidosha/tragirl/',
+          'alt' => '女性トラックドライバーとして活躍しませんか？トラガール促進プロジェクト｜国土交通省',
+        ],
+        [
+          'img' => '/top/banner5.jpg',
+          'link' => 'https://chuo.rokin.com/',
+          'alt' => 'ろうきん',
+        ],
+      ];
+      ?>
+      <ul class="p-pickup__banners">
+        <?php foreach ($bannerItem as $item) : ?>
+          <li class="p-pickup__banner">
+            <a href="<?php echo esc_url($item['link']); ?>" target="_blank">
+              <img src="<?php img_path($item['img']); ?>" alt=""/>
+            </a>
+          </li>
+        <?php endforeach; ?>
+      </ul>
     </div>
+  </section>
 
-    <br>
-    <br>
-
-    <div class="c-frame-green1">
-      <p class="c-frame-green1__num">1</p>
-      <p class="c-frame-green1__title">労働条件の維持・向上</p>
-      <p class="c-frame-green1__text">・賃金引き上げや一時金（ボーナス）について統一要求などの取り組みを行います。<br>
-        ・産業別最低賃金、企業内最低賃金の協定化を行います。</p>
-      <figure class="c-frame-green1__img">
-        <img src="http://unyuroren.local/wp-content/themes/unyuroren/assets/images/top/mv1.jpg" alt="" width="295" height="182" />
-      </figure>
-    </div>
-
-    <br>
-    <br>
-
-    <div class="c-frame-green2">
-      <p class="c-frame-green2__num">1</p>
-      <p class="c-frame-green2__title">医療品・医薬品が手に入りにくくなる可能性があります</p>
-      <p class="c-frame-green2__text">病院や薬局、ドラッグストアへの医療品・医薬品などの納品は、ほとんどトラックが行っています。</p>
-      <figure class="c-frame-green2__img">
-        <img src="http://unyuroren.local/wp-content/themes/unyuroren/assets/images/top/mv1.jpg" alt="" width="295" height="182" />
-      </figure>
-    </div>
-
-  </div>
 </main>
 
 <?php get_footer(); ?>

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class="p-page">
   <div class="l-inner">
 
 
