@@ -291,6 +291,7 @@
 @media (any-hover: hover) {
   .p-footer__nav-head:hover {
     opacity: 1;
-    background-color: var(--bg-light-green);
+    background-color: var(--light-green);
+    background-color: color-mix(in srgb, var(--light-green) 50%, #ECECEC 50%);
   }
 }

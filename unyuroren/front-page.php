@@ -10,7 +10,10 @@
             <ul class="p-mv__wrapper swiper-wrapper">
               <li class="p-mv__slide swiper-slide">
                 <figure class="p-mv__img">
-                  <img src="<?php img_path('/top/mv1.jpg') ?>" alt="トラック正面と運転する手元" />
+                  <picture>
+                    <source srcset="<?php img_path('/top/mv1.png') ?>" media="(min-width: 768px)" />
+                    <img src="<?php img_path('/top/mv1_sp.png') ?>" alt="トラック正面と運転する手元" width="335" height="176" />
+                  </picture>
                 </figure>
                 <figure class="p-mv__catch-img">
                   <img src="<?php img_path('/top/mv1-catch.svg') ?>" alt="だれもが安心して働ける職場づくりをめざして" />
@@ -18,7 +21,10 @@
               </li>
               <li class="p-mv__slide swiper-slide">
                 <figure class="p-mv__img">
-                  <img src="<?php img_path('/top/mv2.jpg') ?>" alt="演説者と聴衆" />
+                  <picture>
+                    <source srcset="<?php img_path('/top/mv2.jpg') ?>" media="(min-width: 768px)" />
+                    <img src="<?php img_path('/top/mv2_sp.jpg') ?>" alt="演説者と聴衆" width="335" height="176" />
+                  </picture>
                 </figure>
                 <div class="p-mv__catch">
                   <p class="p-mv__title">運輸労連第56回<br>定期大会開催</p>
@@ -26,7 +32,10 @@
               </li>
               <li class="p-mv__slide swiper-slide">
                 <figure class="p-mv__img">
-                  <img src="<?php img_path('/top/mv3.jpg') ?>" alt="アンケート用紙を記入している手元" />
+                  <picture>
+                    <source srcset="<?php img_path('/top/mv3.jpg') ?>" media="(min-width: 768px)" />
+                    <img src="<?php img_path('/top/mv3_sp.jpg') ?>" alt="アンケート用紙を記入している手元" width="335" height="176" />
+                  </picture>
                 </figure>
                 <div class="p-mv__catch">
                   <p class="p-mv__title">ドライバーアンケート<br>調査結果報告書</p>
@@ -45,7 +54,7 @@
           <ul class="p-mv__thumbnail-wrapper swiper-wrapper">
             <li class="p-mv__thumbnail-slide swiper-slide">
               <figure class="p-mv__thumbnail-img">
-                <img src="<?php img_path('/top/mv1.jpg') ?>" alt="トラック正面と運転する手元" />
+                <img src="<?php img_path('/top/mv1_sp.png') ?>" alt="トラック正面と運転する手元" />
               </figure>
               <figure class="p-mv__thumbnail-catch-img">
                 <img src="<?php img_path('/top/mv1-catch.svg') ?>" alt="だれもが安心して働ける職場づくりをめざして" />
@@ -53,7 +62,7 @@
             </li>
             <li class="p-mv__thumbnail-slide swiper-slide">
               <figure class="p-mv__thumbnail-img">
-                <img src="<?php img_path('/top/mv2.jpg') ?>" alt="演説者と聴衆" />
+                <img src="<?php img_path('/top/mv2_sp.jpg') ?>" alt="演説者と聴衆" />
               </figure>
               <div class="p-mv__thumbnail-catch">
                 <p class="p-mv__thumbnail-title">運輸労連第56回<br>定期大会開催</p>
@@ -61,7 +70,7 @@
             </li>
             <li class="p-mv__thumbnail-slide swiper-slide">
               <figure class="p-mv__thumbnail-img">
-                <img src="<?php img_path('/top/mv3.jpg') ?>" alt="アンケート用紙を記入している手元" />
+                <img src="<?php img_path('/top/mv3_sp.jpg') ?>" alt="アンケート用紙を記入している手元" />
               </figure>
               <div class="p-mv__thumbnail-catch">
                 <p class="p-mv__thumbnail-title">ドライバーアンケート<br>調査結果報告書</p>
@@ -73,7 +82,7 @@
     </div>
   </div>
 
-  <section class="p-news l-news">
+  <section class="p-news l-common">
     <div class="p-news__inner l-inner">
       <h2 class="p-news__title">活動報告</h2>
       <div class="p-news__container">
@@ -113,7 +122,7 @@
     </div>
   </section>
 
-  <section class="p-pickup l-pickup">
+  <section class="p-pickup l-common">
     <div class="p-pickup__inner l-inner">
       <h2 class="p-pickup__title">ピックアップ</h2>
       <div class="p-pickup__container">
@@ -160,7 +169,7 @@
         <?php foreach ($bannerItem as $item) : ?>
           <li class="p-pickup__banner">
             <a href="<?php echo esc_url($item['link']); ?>" target="_blank">
-              <img src="<?php img_path($item['img']); ?>" alt=""/>
+              <img src="<?php img_path($item['img']); ?>" alt="" />
             </a>
           </li>
         <?php endforeach; ?>

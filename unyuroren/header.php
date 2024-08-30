@@ -16,10 +16,10 @@
       <div class="p-header__wrapper">
         <a href="<?php page_path(); ?>" class="p-header__logo-wrap">
           <h1 class="p-header__logo">
-            <img src="<?php img_path('/common/logo.svg') ?>" alt="運輸労連全日本運輸産業労働組合連合会">
+            <img src="<?php img_path('/common/logo.svg') ?>" alt="運輸労連全日本運輸産業労働組合連合会" width="132" height="55">
           </h1>
           <figure class="p-header__truck">
-            <img src="<?php img_path('/common/truck.svg') ?>" alt="トラックのイラスト" />
+            <img src="<?php img_path('/common/truck.svg') ?>" alt="トラックのイラスト" width="50" height="55"/>
           </figure>
         </a>
         <div class="p-header__sns-links">
@@ -36,7 +36,7 @@
         <div class="p-header__freedial">
           <p class="p-header__freedial-title">運輸労連 組合づくり相談</p>
           <figure class="p-header__freedial-icon">
-            <img src="<?php img_path('/common/freedial.svg') ?>" alt="フリーダイヤル" />
+            <img src="<?php img_path('/common/freedial.svg') ?>" alt="フリーダイヤル" width="24" height="14" />
           </figure>
           <a href="tel:0120109760" class="p-header__freedial-tel">0120-109-760</a>
         </div>
@@ -135,7 +135,7 @@
           <span></span>
         </button>
       </div>
-      <div class="p-header__drawer js-drawer">
+      <div class="p-header__drawer js-drawer" aria-hidden="true">
         <div class="p-header__drawer-wrapper">
           <nav class="p-header__drawer-nav">
             <ul class="p-header__drawer-list">

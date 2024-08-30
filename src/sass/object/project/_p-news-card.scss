@@ -41,10 +41,15 @@
   line-height: calc(24/14);
   letter-spacing: 0.05em;
   flex-grow: 1;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
 
   @include mq("md") {
     font-size: rem(18);
     line-height: 2;
+    -webkit-line-clamp: 5;
   }
 }
 

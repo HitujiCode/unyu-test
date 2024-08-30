@@ -62,14 +62,14 @@ a {
 /* hover指定できるPCを想定したスタイル */
 @media (hover: hover) {
   a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 
 /* hoverが使えないタッチ端末を想定した装飾 */
 @media (hover: none) {
   a:active {
-    opacity: 0.8;
+    opacity: 0.7;
   }
 }
 
