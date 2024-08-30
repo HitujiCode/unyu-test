@@ -35,12 +35,13 @@
 
 .p-pickup__list {
   display: grid;
-  grid-template-columns: repeat(2, rem(270));
+  grid-template-columns: repeat(2, 1fr);
   gap: rem(16);
   justify-content: center;
   position: relative;
 
   @include mq("md") {
+    grid-template-columns: repeat(2, rem(270));
     gap: rem(40);
   }
 }

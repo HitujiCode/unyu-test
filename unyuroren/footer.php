@@ -10,7 +10,7 @@
         <address class="p-footer__address">
           〒100-0013<br>
           東京都千代田区霞が関3丁目3-3 全日通霞が関ビル5F<br>
-          TEL：03-3503-2171</p>
+          TEL：03-3503-2171
         </address>
         <div class="p-footer__sns-links">
           <a href="">

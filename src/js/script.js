@@ -1,10 +1,5 @@
 
 jQuery(function ($) { // この中であればWordpressでも「$」が使用可能になる
-  // ヘッダーの高さを取得してmainにmargin-topを指定
-  $(window).on('load resize', function () {
-    const headerHeight = $('.js-header').outerHeight();
-    $('main').css('margin-top', headerHeight);
-  });
 
   // ページトップボタン
   $(window).on('scroll', function () {
@@ -74,23 +69,26 @@ jQuery(function ($) { // この中であればWordpressでも「$」が使用可
 
   // フッターのアコーディオン
   function setupFooterAccordion() {
+    $('.js-footer-accordion').off('click');
+
     if (window.matchMedia("(max-width: 767px)").matches) {
       $('.js-footer-accordion').on('click', function () {
-        $('.js-footer-accordion').not(this).removeClass('is-open').next('.p-footer__nav-sub-list').slideUp();
-        $(this).toggleClass('is-open').next('.p-footer__nav-sub-list').slideToggle();
+        $('.js-footer-accordion').not(this).removeClass('is-open').next('.p-footer__nav-sub-list').stop(true, true).slideUp();
+        $(this).toggleClass('is-open').next('.p-footer__nav-sub-list').stop(true, true).slideToggle();
       });
     } else {
       // 767px以上の場合はアコーディオン機能を解除
-      $('.js-footer-accordion').off('click').removeClass('is-open');
-      $('.p-footer__nav-sub-list').removeAttr('style');
+      $('.js-footer-accordion').removeClass('is-open');
+      $('.p-footer__nav-sub-list').stop(true, true).slideDown().removeAttr('style');
     }
   }
 
   setupFooterAccordion();
 
-  $(window).resize(function () {
+  $(window).on('resize', function () {
     setupFooterAccordion();
   });
+
 });
 
 // MVスライダー
@@ -111,7 +109,8 @@ const mvSwiper = new Swiper('.js-mv-swiper', {
   speed: 3000,
   spaceBetween: 20,
   autoplay: {
-    delay: 1000,
+    delay: 2000,
+    disableOnInteraction: false,
   },
   navigation: {
     nextEl: '.swiper-button-next',

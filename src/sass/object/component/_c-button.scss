@@ -45,6 +45,7 @@
 
 @media (any-hover: hover) {
   .c-button:hover {
+    opacity: 1;
     background-color: var(--main);
     color: var(--white);
   }
@@ -117,5 +118,7 @@
 }
 
 .c-button--small::before {
-  content: none;
+  @include mq("md") {
+    content: none;
+  }
 }

@@ -1,16 +1,12 @@
 <?php get_header(); ?>
 
-<main>
+<main class="p-page">
   <div class="l-inner">
 
-    <?php
-    $args = array(
-      'link' => '/about',
-      'text' => '理念',
-      'modifier' => ''
-    );
-    get_template_part('parts/component/c-button', null, $args);
-    ?>
+    <br>
+    <br>
+
+    <h1>h1見出し</h1>
 
     <br>
     <br>
@@ -30,6 +26,107 @@
     <br>
     <br>
 
+    <?php
+    $args = array(
+      'link' => '/about',
+      'text' => '理念',
+      'modifier' => ''
+    );
+    get_template_part('parts/component/c-button', null, $args);
+    ?>
+
+    <br>
+    <br>
+
+    <?php
+    $args = array(
+      'link' => '/about',
+      'text' => 'サンプルテキスト',
+      'modifier' => 'blank'
+    );
+    get_template_part('parts/component/c-button', null, $args);
+    ?>
+
+    <br>
+    <br>
+
+    <?php
+    $args = array(
+      'link' => '/about',
+      'text' => 'サンプルテキスト',
+      'modifier' => 'blank2'
+    );
+    get_template_part('parts/component/c-button', null, $args);
+    ?>
+
+    <br>
+    <br>
+
+    <?php
+    $args = array(
+      'link' => '/about',
+      'text' => 'サンプルテキスト',
+      'modifier' => 'anchor'
+    );
+    get_template_part('parts/component/c-button', null, $args);
+    ?>
+
+    <br>
+    <br>
+
+    <?php
+    $args = array(
+      'link' => '/about',
+      'text' => 'サンプルテキスト',
+      'modifier' => 'small'
+    );
+    get_template_part('parts/component/c-button', null, $args);
+    ?>
+
+    <br>
+    <br>
+
+    <?php
+    $args = array(
+      'link' => '/about',
+      'text' => 'サンプルテキスト',
+    );
+    get_template_part('parts/component/c-link-text', null, $args);
+    ?>
+
+    <br>
+    <br>
+
+    <?php
+    $args = array(
+      'link' => '/about',
+      'text' => 'サンプルテキスト',
+    );
+    get_template_part('parts/component/c-link-arrow', null, $args);
+    ?>
+
+    <br>
+    <br>
+
+    <?php
+    $args = array(
+      'text' => '自動車運転の業務（ドライバー）に年960時間の上限規制が適用されます',
+    );
+    get_template_part('parts/component/c-frame', null, $args);
+    ?>
+
+    <br>
+    <br>
+
+    <blockquote>
+      　昨日の集会ではＡさんとＢさんが熱く意見を主張し、議論は多いに白熱したが、二人の主張が食い違っており、２時間という長丁場を経たが、議論は平行線を辿ったままで、ＡさんもＢさんも感情的になってしまい、最後まで結論は出なかった。
+    </blockquote>
+
+    <br>
+    <br>
+
+
+    <!-- 仮置き -->
     <div class="p-common-block">
       <div class="p-common-block__inner l-inner">
         <figure class="p-common-block__img">
@@ -42,36 +139,6 @@
     </div>
 
     <div class="l-inner">
-
-      <a class="c-link-text" href="">リンクテキスト</a>
-
-      <br>
-      <br>
-
-
-
-      <br>
-      <br>
-
-      <br>
-      <br>
-
-      <a href="" class="c-link-arrow">調査活動</a>
-
-      <br>
-      <br>
-
-      <p class="c-frame">自動車運転の業務（ドライバー）に年960時間の上限規制が適用されます</p>
-
-      <br>
-      <br>
-
-      <blockquote>
-        　昨日の集会ではＡさんとＢさんが熱く意見を主張し、議論は多いに白熱したが、二人の主張が食い違っており、２時間という長丁場を経たが、議論は平行線を辿ったままで、ＡさんもＢさんも感情的になってしまい、最後まで結論は出なかった。
-      </blockquote>
-
-      <br>
-      <br>
 
       <div class="c-frame-border">
         <p class="c-frame-border__title">記事作成「７つの心得」</p>

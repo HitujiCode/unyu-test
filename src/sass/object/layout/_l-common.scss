@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.l-news {
+.l-common {
   margin-top: rem(30);
 
   @include mq("md") {

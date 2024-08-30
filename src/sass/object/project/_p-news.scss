@@ -29,7 +29,7 @@
 .p-news__list {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: rem(16);
+  column-gap: rem(12);
   row-gap: rem(14);
 
   @include mq("md") {

@@ -1,7 +1,11 @@
 @use "global" as *;
 
 :where(.wp-block-columns.is-layout-flex) {
-  gap: rem(50);
+  gap: rem(20);
+
+  @include mq("md") {
+    gap: rem(50);
+  }
 }
 
 %h1-base {
