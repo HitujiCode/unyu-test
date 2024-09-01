@@ -1,0 +1,38 @@
+@use "global" as *;
+
+.c-frame {
+  background-color: var(--bg-light-gray);
+  padding-top: rem(30);
+  padding-right: rem(20);
+  padding-bottom: rem(23);
+  padding-left: rem(40);
+  border-bottom: rem(10) solid var(--gray2);
+  position: relative;
+  font-size: rem(18);
+  font-weight: var(--bold);
+  color: var(--dark-blue);
+  line-height: calc(32/18);
+
+  @include mq("md") {
+    padding-top: rem(46);
+    padding-right: rem(22);
+    padding-bottom: rem(38);
+    padding-left: rem(73);
+    font-size: rem(24);
+    line-height: 2;
+  }
+}
+
+.c-frame::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--link);
+  width: rem(20);
+  height: calc(100% + rem(10));
+
+  @include mq("md") {
+    width: rem(30);
+  }
+}

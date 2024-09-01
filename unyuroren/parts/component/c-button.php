@@ -1,7 +1,7 @@
 <?php
 $link = isset($args['link']) ? $args['link'] : '';
 $text = isset($args['text']) ? $args['text'] : '';
-$modifier_list = array('blank', 'anchor', 'blank2', 'small');
+$modifier_list = array('blank', 'anchor', 'blank2', 'small', 'back');
 $modifier = isset($args['modifier']) ? $args['modifier'] : '';
 
 $button_class = 'c-button';

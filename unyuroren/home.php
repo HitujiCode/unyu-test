@@ -1,13 +1,13 @@
 <?php get_header(); ?>
 
 <main class="p-post">
+  <div class="l-inner">
 
-  <?php get_template_part('parts/component/c-breadcrumb') ?>
+    <?php get_template_part('parts/component/c-breadcrumb') ?>
 
-  <section class="p-sub-news l-common">
-    <h1 class="p-sub-news__title">活動報告</h1>
-    <div class="p-sub-news__container">
-      <div class="p-sub-news__inner l-inner">
+    <section class="p-sub-news l-common">
+      <h1 class="p-sub-news__title">活動報告</h1>
+      <div class="p-sub-news__container">
         <ul class="p-sub-news__list">
           <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
               <li class="p-sub-news__item">
@@ -30,9 +30,8 @@
           } ?>
         </div>
       </div>
-    </div>
-  </section>
-
+    </section>
+  </div>
 </main>
 
 <?php get_footer(); ?>

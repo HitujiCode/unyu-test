@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.p-link-block {}
+
+.p-link-block__inner.l-inner {
+  padding-inline: rem(28);
+
+  @include mq("md") {
+    padding-inline: $padding-pc;
+  }
+}
+
+.p-link-block__head {}
+
+.p-link-block__list {
+  margin-top: rem(30);
+  display: grid;
+  gap: rem(14);
+
+  @include mq("md") {
+    margin-top: rem(40);
+    grid-template-columns: repeat(3, max-content);
+    column-gap: rem(30);
+    justify-content: space-between;
+    max-width: 872px;
+  }
+}
+
+.p-link-block__item {
+  line-height: 1;
+}

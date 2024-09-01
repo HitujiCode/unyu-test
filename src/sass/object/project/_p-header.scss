@@ -301,7 +301,7 @@
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: contain;
-  transform: background-color 0.3s ease;
+  transition: background-color 0.3s ease;
 }
 
 .p-header__freedial {

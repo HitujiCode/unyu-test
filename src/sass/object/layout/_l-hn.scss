@@ -21,11 +21,21 @@
 }
 
 .l-h3 {
-  margin-top: rem(50);
-  margin-bottom: rem(30);
+  margin-top: rem(40);
+  margin-bottom: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(50);
+    margin-bottom: rem(30);
+  }
 }
 
 .l-h4 {
-  margin-top: rem(50);
-  margin-bottom: rem(30);
+  margin-top: rem(40);
+  margin-bottom: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(50);
+    margin-bottom: rem(30);
+  }
 }
