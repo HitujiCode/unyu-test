@@ -1,4 +1,9 @@
-<a href="<?php the_permalink(); ?>" class="p-news-card">
+<?php
+$modifier = isset($args['modifier']) ? $args['modifier'] : '';
+$card_class = 'p-news-card' . (!empty($modifier) ? ' p-news-card--' . esc_attr($modifier) : '');
+?>
+
+<a href="<?php the_permalink(); ?>" class="<?php echo esc_html($card_class); ?>">
   <figure class="p-news-card__img">
     <?php if (has_post_thumbnail()) :
       $thumbnail_id = get_post_thumbnail_id(get_the_ID());

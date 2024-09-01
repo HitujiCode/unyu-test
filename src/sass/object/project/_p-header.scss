@@ -470,6 +470,10 @@
   scrollbar-width: none;
   transition: transform .5s ease;
   transform: translateY(-100%);
+
+  @include mq("md") {
+    display: none;
+  }
 }
 
 .p-header__drawer.is-open {

@@ -1,0 +1,34 @@
+@use "global" as *;
+
+.p-sub-news {}
+
+.p-sub-news__title {}
+
+.p-sub-news__container {
+  margin-top: rem(50);
+  background-color: var(--bg-light-green);
+  padding-block: rem(50);
+}
+
+.p-sub-news__inner.l-inner {}
+
+.p-sub-news__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: rem(20);
+  row-gap: rem(30);
+
+  @include mq("md") {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: min(42/1400*100vw, 42px);
+    row-gap: rem(50);
+  }
+}
+
+.p-sub-news__item {}
+
+.p-news__text {}
+
+.p-sub-news__pagination {
+  margin-top: rem(50);
+}
