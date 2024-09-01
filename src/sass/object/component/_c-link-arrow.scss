@@ -1,0 +1,51 @@
+@use "global" as *;
+
+.c-link-arrow {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: rem(8);
+  align-items: center;
+  font-size: rem(14);
+  line-height: calc(18/14);
+
+  @include mq("md") {
+    gap: rem(18);
+    font-size: rem(16);
+    line-height: 1.5;
+  }
+}
+
+.c-link-arrow::before {
+  content: "";
+  background-image: url(../images/common/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: rem(10);
+  aspect-ratio: 10/9;
+
+  @include mq("md") {
+    width: rem(17);
+  }
+}
+
+.c-link-arrow--large {
+  gap: rem(15);
+  font-size: rem(16);
+  font-weight: var(--bold);
+  line-height: calc(24/16);
+
+  @include mq("md") {
+    gap: rem(16);
+    font-size: rem(20);
+    line-height: calc(29/20);
+  }
+}
+
+.c-link-arrow--large::before {
+  width: rem(15);
+
+  @include mq("md") {
+    width: rem(18);
+  }
+}

@@ -6,8 +6,15 @@
 
 .p-sub-news__container {
   margin-top: rem(50);
-  background-color: var(--bg-light-green);
+  margin-inline: calc(50% - 50vw);
+  padding-inline: calc(50vw - 50%);
   padding-block: rem(50);
+  background-color: var(--bg-light-green);
+
+  @include mq("md") {
+    margin-top: rem(70);
+    padding-block: rem(100);
+  }
 }
 
 .p-sub-news__inner.l-inner {}
@@ -31,4 +38,8 @@
 
 .p-sub-news__pagination {
   margin-top: rem(50);
+
+  @include mq("md") {
+    margin-top: rem(100);
+  }
 }

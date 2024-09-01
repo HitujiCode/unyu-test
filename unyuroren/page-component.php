@@ -125,19 +125,19 @@
     <br>
     <br>
 
+    <?php
+    $args = array(
+      'text' => '「改善基準告示」とは自動車運転者の労働時間等の労働条件の改善をするために労働大臣が1989年2月に告示したものの略称です。さらに一部改正され、現行基準は2024年4月1日から適用されています。',
+      'img' => array(
+        'src' => 'http://unyuroren.local/wp-content/themes/unyuroren/assets/images/top/mv1.jpg',
+        'alt' => '改善基準告示の画像'
+      )
+    );
+    get_template_part('parts/project/p-fv-block', null, $args);
+    ?>
+
 
     <!-- 仮置き -->
-    <div class="p-common-block">
-      <div class="p-common-block__inner l-inner">
-        <figure class="p-common-block__img">
-          <img src="http://unyuroren.local/wp-content/themes/unyuroren/assets/images/top/mv1.jpg" alt="" width="400" height="248" />
-        </figure>
-        <p class="p-common-block__text">　「改善基準告示」とは自動車運転者の労働時間等の労働条件の改善をするために労働大臣が1989年2月に告示したものの略称です。さらに一部改正され、現行基準は2024年4月1日から適用されています。<br>
-          　改善基準告示は交通安全を確保するために運転者の「拘束時間」「休息期間」「運転時間」「時間外や休日労働」などを規制しているもので、トラック・バス・タクシーの業種毎に基準を定めています。<br>
-          　プロドライバーとして一般運転者の模範とならなくてはなりません。そのため少なくともこれだけは「知り、守り、守らせ」交通事故を撲滅させましょう。</p>
-      </div>
-    </div>
-
     <div class="l-inner">
 
       <div class="c-frame-border">

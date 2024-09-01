@@ -1,7 +1,8 @@
 @use "global" as *;
 
 .c-button {
-  display: inline-grid;
+  margin-inline: auto;
+  display: grid;
   grid-template-columns: 1fr auto 1fr;
   gap: rem(16);
   align-items: center;
@@ -95,7 +96,7 @@
 
 .c-button--blank2::after {
   mask-image: url(../images/common/icon-blank.svg);
-  width: rem(11);
+  width: rem(18);
   aspect-ratio: 1/1;
   justify-self: flex-start;
 
@@ -120,5 +121,32 @@
 .c-button--small::before {
   @include mq("md") {
     content: none;
+  }
+}
+
+.c-button--back {
+  grid-template-columns: auto 1fr auto;
+}
+
+.c-button--back::before {
+  content: "";
+  background-color: currentColor;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  mask-size: contain;
+  width: rem(18);
+  aspect-ratio: 18/12;
+  justify-self: flex-end;
+  mask-image: url(../images/common/arrow.svg);
+  transform: scale(-1);
+}
+
+.c-button--back::after {
+  content: none;
+
+  @include mq("md") {
+    content: "";
+    background-color: initial;
+    mask-image: none;
   }
 }

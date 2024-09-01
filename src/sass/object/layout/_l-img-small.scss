@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-img-small {
+  width: 70%;
+
+  @include mq("md") {
+    width: 30%;
+  }
+}

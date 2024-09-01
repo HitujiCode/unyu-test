@@ -2,9 +2,8 @@
 
 .l-breadcrumb {
   margin-top: rem(8);
-  padding-inline: $padding-sp;
 
   @include mq("md") {
-    padding-inline: $padding-pc;
+    margin-top: rem(12);
   }
 }

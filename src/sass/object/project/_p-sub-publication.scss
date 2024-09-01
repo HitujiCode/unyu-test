@@ -1,0 +1,53 @@
+@use "global" as *;
+
+.p-sub-publication {
+  margin-top: rem(58);
+
+  @include mq("md") {
+    margin-top: rem(100);
+  }
+}
+
+.p-sub-publication__title {}
+
+.p-sub-publication__read {
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(52);
+  }
+}
+
+.p-sub-publication__list {
+  margin-top: rem(40);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: rem(24);
+
+  @include mq("md") {
+    margin-top: rem(88);
+    grid-template-columns: repeat(3, minmax(0, 240px));
+    justify-content: space-between;
+    gap: rem(50);
+  }
+}
+
+.p-sub-publication__item {
+  box-shadow: rem(3) rem(3) rem(6) rgb(#000, 0.16);
+}
+
+.p-sub-publication__img {}
+
+.p-sub-publication__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.p-sub-publication__button {
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(82);
+  }
+}

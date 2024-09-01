@@ -15,11 +15,17 @@
     <div class="p-header__inner">
       <div class="p-header__wrapper">
         <a href="<?php page_path(); ?>" class="p-header__logo-wrap">
-          <h1 class="p-header__logo">
-            <img src="<?php img_path('/common/logo.svg') ?>" alt="運輸労連全日本運輸産業労働組合連合会" width="132" height="55">
-          </h1>
+          <?php if (is_front_page()) : ?>
+            <h1 class="p-header__logo">
+              <img src="<?php img_path('/common/logo.svg') ?>" alt="運輸労連全日本運輸産業労働組合連合会" width="132" height="55">
+            </h1>
+          <?php else : ?>
+            <div class="p-header__logo">
+              <img src="<?php img_path('/common/logo.svg') ?>" alt="運輸労連全日本運輸産業労働組合連合会" width="132" height="55">
+            </div>
+          <?php endif; ?>
           <figure class="p-header__truck">
-            <img src="<?php img_path('/common/truck.svg') ?>" alt="トラックのイラスト" width="50" height="55"/>
+            <img src="<?php img_path('/common/truck.svg') ?>" alt="トラックのイラスト" width="50" height="55" />
           </figure>
         </a>
         <div class="p-header__sns-links">
@@ -68,7 +74,7 @@
             'modal' => [
               ['text' => '調査活動', 'modal_link' => 'activity/survey'],
               ['text' => '広報', 'modal_link' => 'activity/pr'],
-              ['text' => 'トラックドライバーの労働基準', 'modal_link' => ''],
+              ['text' => 'トラックドライバーの労働基準', 'modal_link' => 'activity/pr/issue'],
               ['text' => '産業政策', 'modal_link' => 'activity/pr/industry'],
               ['text' => '労働政策', 'modal_link' => 'activity/pr/labor'],
               ['text' => '春季生活闘争', 'modal_link' => 'activity/pr/spring'],

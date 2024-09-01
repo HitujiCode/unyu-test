@@ -1,11 +1,31 @@
 @use "global" as *;
 
-:where(.wp-block-columns.is-layout-flex) {
-  gap: rem(20);
+.wp-block-image {
+  margin-top: rem(50);
+}
+
+:where(.wp-block-columns) {
+  margin-bottom: rem(30);
 
   @include mq("md") {
-    gap: rem(50);
+    margin-bottom: rem(50);
   }
+}
+
+:where(.wp-block-columns.is-layout-flex) {
+  column-gap: rem(20);
+  row-gap: rem(30);
+
+  @include mq("md") {
+    column-gap: rem(50);
+  }
+}
+
+.wp-block-image :where(figcaption) {
+  margin-top: rem(20);
+  font-size: rem(16);
+  line-height: 2;
+  text-align: center;
 }
 
 %h1-base {

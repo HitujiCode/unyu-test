@@ -46,7 +46,7 @@
           'sub' => [
             ['text' => '調査活動', 'link' => 'activity/survey'],
             ['text' => '広報', 'link' => 'activity/pr'],
-            ['text' => 'トラックドライバーの<wbr>労働基準', 'link' => ''],
+            ['text' => 'トラックドライバーの<wbr>労働基準', 'link' => 'activity/pr/issue'],
             ['text' => '産業政策', 'link' => 'activity/pr/industry'],
             ['text' => '労働政策', 'link' => 'activity/pr/labor'],
             ['text' => '春季生活闘争', 'link' => 'activity/pr/spring'],

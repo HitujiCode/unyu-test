@@ -1,0 +1,7 @@
+@use "global" as *;
+
+.c-text {
+  font-size: rem(16);
+  font-weight: var(--medium);
+  line-height: 2;
+}

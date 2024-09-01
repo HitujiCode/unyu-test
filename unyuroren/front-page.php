@@ -128,7 +128,7 @@
       <div class="p-pickup__container">
         <ul class="p-pickup__list">
           <li class="p-pickup__item">
-            <a href="" class="p-pickup__link">
+            <a href="http://fuso-jp.com/survey/unyu/enqu/area_01/" class="p-pickup__link">
               <figure class="p-pickup__img">
                 <img src="<?php img_path('/top/banner1.png') ?>" alt="トラックドライバーの皆さんへ" />
               </figure>
@@ -136,7 +136,7 @@
             </a>
           </li>
           <li class="p-pickup__item">
-            <a href="" class="p-pickup__link">
+            <a href="<?php page_path('/activity/pr/support'); ?>" class="p-pickup__link">
               <figure class="p-pickup__img">
                 <img src="<?php img_path('/top/banner2.jpg') ?>" alt="" />
               </figure>
@@ -160,7 +160,7 @@
         ],
         [
           'img' => '/top/banner5.jpg',
-          'link' => 'https://chuo.rokin.com/',
+          'link' => 'https://all.rokin.or.jp/',
           'alt' => 'ろうきん',
         ],
       ];

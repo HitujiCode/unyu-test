@@ -125,7 +125,7 @@
   right: rem(-20);
 
   @include mq("md") {
-    right: calc(50% - min(50vw, 558px));
+    right: calc(50% - min(684/1400*100vw, rem(558)));
   }
 }
 
@@ -133,7 +133,7 @@
   left: rem(-20);
 
   @include mq("md") {
-    left: calc(50% - min(50vw, 558px));
+    left: calc(50% - min(684/1400*100vw, 558px));
   }
 }
 

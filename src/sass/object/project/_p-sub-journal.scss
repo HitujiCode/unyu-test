@@ -1,0 +1,69 @@
+@use "global" as *;
+
+.p-sub-journal {
+  overflow-x: clip;
+  margin-top: rem(62);
+  padding-block: rem(52) rem(50);
+  background-color: var(--bg-light-green);
+
+  @include mq("md") {
+    margin-top: rem(100);
+    padding-block: rem(92) rem(98);
+  }
+}
+
+.p-sub-journal__title {}
+
+.p-sub-journal__content {
+  margin-top: rem(40);
+  display: flex;
+  flex-direction: column;
+
+  @include mq("md") {
+    margin-top: rem(52);
+    flex-direction: row;
+    gap: min(100/1400*100vw, 100px);
+  }
+}
+
+.p-sub-journal__wrap {
+  display: contents;
+
+  @include mq("md") {
+    display: block;
+    width: calc(400/1000*100%);
+  }
+}
+
+.p-sub-journal__read {}
+
+.p-sub-journal__img {
+  margin-top: rem(18);
+  margin-right: calc(50% - 50vw);
+
+  @include mq("md") {
+    margin-top: initial;
+    flex: 1;
+  }
+}
+
+.p-sub-journal__img img {
+  border-radius: rem(10) 0 0 rem(10);
+  aspect-ratio: 350/234;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+
+  @include mq("md") {
+    aspect-ratio: 700/467;
+  }
+}
+
+.p-sub-journal__button {
+  margin-top: rem(35);
+  order: 1;
+
+  @include mq("md") {
+    margin-top: rem(98);
+  }
+}
