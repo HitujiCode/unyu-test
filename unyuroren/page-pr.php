@@ -4,7 +4,7 @@
 
   <?php get_template_part('parts/component/c-breadcrumb') ?>
 
-  <h1 class="l-mtb1">広報</h1>
+  <h1 class="l-mtb1"><?php the_title(); ?></h1>
 
   <section class="p-sub-publication">
     <div class="p-sub-publication__inner l-inner">

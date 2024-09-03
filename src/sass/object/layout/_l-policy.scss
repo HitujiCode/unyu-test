@@ -1,0 +1,11 @@
+@use "global" as *;
+
+.l-policy {
+  margin-top: rem(45);
+  padding-bottom: rem(50);
+
+  @include mq("md") {
+    margin-top: rem(50);
+    padding-bottom: rem(100);
+  }
+}

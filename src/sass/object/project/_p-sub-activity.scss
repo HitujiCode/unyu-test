@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.p-sub-activity {
+.p-toc {
   background-color: var(--bg-light-green);
   padding-block: rem(50);
 
@@ -9,20 +9,20 @@
   }
 }
 
-.p-sub-activity__inner.l-inner {}
+.p-toc__inner.l-inner {}
 
-.p-sub-activity .wp-block-columns:last-child {
+.p-toc .wp-block-columns:last-child {
   margin-bottom: initial;
 }
 
-.p-sub-activity .wp-block-column img {
+.p-toc .wp-block-column img {
   aspect-ratio: 300/185;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.p-sub-activity .wp-block-column:not(:has(img)) {
+.p-toc .wp-block-column:not(:has(img)) {
   display: none;
 
   @include mq("md") {
@@ -30,7 +30,7 @@
   }
 }
 
-.p-sub-activity .wp-block-columns+.wp-block-columns {
+.p-toc .wp-block-columns+.wp-block-columns {
   margin-top: rem(30);
 
   @include mq("md") {
@@ -38,7 +38,7 @@
   }
 }
 
-.p-sub-activity .wp-block-image :where(figcaption) {
+.p-toc .wp-block-image :where(figcaption) {
   margin-top: rem(20);
   margin-bottom: initial;
   text-align: left;
@@ -57,7 +57,7 @@
   }
 }
 
-.p-sub-activity .wp-block-image :where(figcaption)::before {
+.p-toc .wp-block-image :where(figcaption)::before {
   content: "";
   background-image: url(../images/common/arrow.svg);
   background-repeat: no-repeat;

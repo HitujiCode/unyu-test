@@ -87,7 +87,7 @@
             'img' => '/common/nav1.jpg',
             'modal' => [
               ['text' => 'いつでもご相談ください', 'modal_link' => 'union/talk'],
-              ['text' => 'なぜ組合が必要か', 'modal_link' => 'union/why'],
+              // ['text' => 'なぜ組合が必要か', 'modal_link' => 'union/why'],
               ['text' => '組合を結成しよう', 'modal_link' => 'union/form'],
               ['text' => '運輸労連に入ろう', 'modal_link' => 'union/unyu'],
               ['text' => '組合づくりQ＆A', 'modal_link' => 'union/faq'],

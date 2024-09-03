@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.p-policy {}
+
+.p-policy__inner.l-inner {}
+
+.p-policy__list {
+  counter-reset: policyNum;
+  display: grid;
+  gap: rem(50);
+}
+
+.p-policy__item {
+  counter-increment: policyNum;
+}
+
+.p-policy__title {
+  font-size: rem(18);
+  font-weight: var(--bold);
+  line-height: 1.5;
+
+  @include mq("md") {
+    font-size: rem(24);
+    line-height: calc(45/24);
+  }
+}
+
+.p-policy__title::before {
+  content: counter(policyNum);
+  display: block;
+  font-size: rem(40);
+  font-weight: var(--bold);
+  color: var(--light-green);
+  line-height: calc(58/40);
+  padding-inline: 0.42em;
+
+  @include mq("md") {
+    font-size: rem(80);
+    line-height: calc(116/80);
+    padding-inline: initial;
+  }
+}
+
+.p-policy__text {
+  margin-top: rem(20);
+  font-size: rem(16);
+  font-weight: var(--medium);
+  line-height: 2;
+}

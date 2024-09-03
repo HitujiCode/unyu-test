@@ -58,7 +58,7 @@
           'link' => 'union',
           'sub' => [
             ['text' => 'いつでもご相談ください', 'link' => 'union/talk'],
-            ['text' => 'なぜ組合が必要か', 'link' => 'union/why'],
+            // ['text' => 'なぜ組合が必要か', 'link' => 'union/why'],
             ['text' => '組合を結成しよう', 'link' => 'union/form'],
             ['text' => '運輸労連に入ろう', 'link' => 'union/unyu'],
             ['text' => '組合づくりQ＆A', 'link' => 'union/faq'],
@@ -154,7 +154,7 @@
       $linkItem = [
         ['text' => 'プライバシーポリシー', 'link' => 'privacy'],
         ['text' => 'About Us', 'link' => 'english'],
-        ['text' => 'リンク', 'link' => ''],
+        ['text' => 'リンク', 'link' => 'link'],
       ];
       ?>
 
