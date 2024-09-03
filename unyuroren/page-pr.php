@@ -110,7 +110,7 @@
           <p class="p-sub-character__text">　「運輸産業で働く仲間の“ゆとりとゆたかさ”という制作者の思いと、多様な仲間が活躍できる魅力ある産業となるようにとの思いを込めました。<br>
             　なお、「ゆたか」の書体はユニバーサルフォントを使用しています。</p>
           <figure class="p-sub-character__truck">
-            <img src="<?php img_path('/common/truck.svg') ?>" alt="横から見たトラックに乗るゆたかのイラスト" />
+            <img src="<?php img_path('/common/truck.png') ?>" alt="横から見たトラックに乗るゆたかのイラスト" />
           </figure>
         </div>
         <div class="p-sub-character__wrap">

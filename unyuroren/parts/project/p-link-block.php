@@ -4,7 +4,7 @@ $head_text = isset($args['head']['text']) ? $args['head']['text'] : '';
 $c_link_arrows = isset($args['c_link_arrows']) ? $args['c_link_arrows'] : array();
 ?>
 
-<div class="p-link-block l-link-block">
+<div class="p-link-block">
   <div class="p-link-block__inner l-inner">
     <div class="p-link-block__head">
       <?php

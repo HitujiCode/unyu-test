@@ -17,6 +17,10 @@
   }
 }
 
+.wp-block-gallery.has-nested-images figure.wp-block-image {
+  place-items: center;
+}
+
 .wp-block-image :where(figcaption) {
   margin-top: rem(20);
   font-size: rem(16);
@@ -27,7 +31,7 @@
 %h1-base {
   font-weight: var(--bold);
   letter-spacing: 0.05em;
-  padding-bottom: rem(17);
+  padding-bottom: rem(20);
   position: relative;
   display: grid;
   place-items: center;
@@ -54,7 +58,11 @@
   @extend %h1-base;
   font-size: rem(20);
   line-height: 1.4;
-  padding-bottom: rem(17);
+  padding-bottom: rem(20);
+
+  @include mq("md") {
+    padding-bottom: rem(45);
+  }
 }
 
 .p-home h2::after,
@@ -68,6 +76,11 @@
   width: rem(40);
   height: rem(4);
   border-radius: 100vh;
+
+  @include mq("md") {
+    width: rem(50);
+    height: rem(5);
+  }
 }
 
 .p-page h2 {

@@ -207,6 +207,12 @@ select::-ms-expand {
 	row-gap: 1.875rem;
 }
 
+.wp-block-gallery.has-nested-images figure.wp-block-image {
+	align-items: center;
+	justify-items: center;
+	place-items: center;
+}
+
 .wp-block-image :where(figcaption) {
 	font-size: 1rem;
 	line-height: 2;
@@ -223,7 +229,7 @@ select::-ms-expand {
 	font-weight: var(--bold);
 	justify-items: center;
 	letter-spacing: 0.05em;
-	padding-bottom: 1.0625rem;
+	padding-bottom: 1.25rem;
 	place-items: center;
 	position: relative;
 }
@@ -238,7 +244,7 @@ select::-ms-expand {
 .p-post h1 {
 	font-size: 1.25rem;
 	line-height: 1.4;
-	padding-bottom: 1.0625rem;
+	padding-bottom: 1.25rem;
 }
 
 .p-home h2::after,
@@ -778,10 +784,7 @@ select::-ms-expand {
 
 .l-journal {
 	margin-top: 3.125rem;
-}
-
-.l-link-block {
-	margin-top: 3.125rem;
+	padding-bottom: 3.125rem;
 }
 
 .p-detail-journal {
@@ -2756,6 +2759,18 @@ body {
 	padding-bottom: 1.0625rem;
 }
 
+.p-page h1,
+.p-post h1 {
+	padding-bottom: 2.8125rem;
+}
+
+.p-home h2::after,
+.p-page h1::after,
+.p-post h1::after {
+	height: 0.3125rem;
+	width: 3.125rem;
+}
+
 .p-page h2 {
 	border-width: 0.3125rem;
 	font-size: 2rem;
@@ -2984,10 +2999,7 @@ body {
 
 .l-journal {
 	margin-top: 6.25rem;
-}
-
-.l-link-block {
-	margin-top: 3.75rem;
+	padding-bottom: 6.875rem;
 }
 
 .p-detail-journal__pagination {
@@ -3154,8 +3166,7 @@ body {
 }
 
 .p-fv-block__text {
-	font-size: 1.125rem;
-	line-height: 1.5;
+	line-height: 2;
 }
 
 .p-header {
@@ -3242,10 +3253,38 @@ body {
 }
 
 .p-journal__list {
-	-moz-column-gap: 2.5rem;
-	column-gap: 2.5rem;
+	-moz-column-gap: 3.125rem;
+	column-gap: 3.125rem;
 	grid-template-columns: repeat(3, 1fr);
 	row-gap: 3.75rem;
+}
+
+.p-journal__card-img {
+	border-radius: 0.625rem;
+}
+
+.p-journal__card-img img {
+	border-radius: 0.625rem;
+}
+
+.p-journal__title {
+	align-items: center;
+	display: flex;
+	gap: 0.625rem;
+	margin-top: 0.9375rem;
+}
+
+.p-journal__card-num {
+	font-size: 2.5rem;
+	line-height: 1.16;
+	padding-left: 0.42em;
+	padding-right: 0.42em;
+}
+
+.p-journal__card-title {
+	letter-spacing: normal;
+	letter-spacing: initial;
+	line-height: 1.5;
 }
 
 .p-link-block {
@@ -3674,7 +3713,7 @@ body {
 }
 
 .p-sub-task__text {
-	margin-top: mre(35);
+	margin-top: 2.1875rem;
 }
 
 .p-sub-task__button {
