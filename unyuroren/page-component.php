@@ -136,6 +136,48 @@
     get_template_part('parts/project/p-fv-block', null, $args);
     ?>
 
+    <br>
+    <br>
+
+    <?php
+    $args = [
+      [
+        'link' => '/activity',
+        'text' => '主な活動トップ',
+      ],
+      [
+        'link' => '/activity/survey',
+        'text' => '調査活動'
+      ],
+      [
+        'link' => '/activity/pr',
+        'text' => '広報'
+      ],
+      [
+        'link' => '/activity/pr/issue',
+        'text' => 'トラックドライバーの労働基準'
+      ],
+      [
+        'link' => '/activity/pr/industry',
+        'text' => '産業政策'
+      ],
+      [
+        'link' => '/activity/pr/labor',
+        'text' => '労働政策'
+      ],
+      [
+        'link' => '/activity/pr/spring',
+        'text' => '春季生活闘争'
+      ],
+      [
+        'link' => '/activity/pr/mental',
+        'text' => 'メンタルヘルスと法律・労働相談'
+      ]
+    ];
+
+    get_template_part('parts/project/p-link-block', null, $args);
+    ?>
+
 
     <!-- 仮置き -->
     <div class="l-inner">

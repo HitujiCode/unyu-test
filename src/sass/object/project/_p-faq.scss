@@ -1,0 +1,125 @@
+@use "global" as *;
+
+.p-faq {}
+
+.p-faq__inner.l-inner {}
+
+.p-faq__list {
+  display: grid;
+  gap: rem(70);
+
+  @include mq("md") {
+    gap: rem(128);
+  }
+}
+
+.p-faq__item {
+  display: grid;
+  gap: rem(20);
+
+  @include mq("md") {
+    gap: initial;
+  }
+}
+
+.p-faq__title {
+  font-size: rem(18);
+  font-weight: var(--bold);
+  line-height: calc(32/18);
+
+  @include mq("md") {
+    font-size: rem(24);
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: rem(10);
+    align-items: center;
+  }
+}
+
+.p-faq__text {
+  font-size: rem(16);
+  font-weight: var(--medium);
+  line-height: 2;
+
+  @include mq("md") {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: rem(10);
+    padding-top: rem(8);
+  }
+}
+
+%faq-font {
+  display: block;
+  font-size: rem(40);
+  font-weight: var(--bold);
+  line-height: calc(58/40);
+  padding-inline: 0.14em;
+
+  @include mq("md") {
+    font-size: rem(80);
+    padding-inline: 0.2em;
+  }
+}
+
+.p-faq__title::before {
+  @extend %faq-font;
+  content: "Q";
+  color: #A5B1D4;
+}
+
+.p-faq__text::before {
+  @extend %faq-font;
+  content: "A";
+  color: #D4A5A5;
+
+  @include mq("md") {
+    margin-top: rem(-8);
+  }
+}
+
+.p-faq__frame {
+  margin-top: rem(20);
+  border: 1px solid var(--light-green);
+  border-radius: rem(10);
+  padding: rem(30) rem(20);
+
+  @include mq("md") {
+    margin-top: rem(100);
+    padding-block: rem(50) rem(80);
+    padding-inline: rem(50);
+  }
+}
+
+.p-faq__frame-title {
+  border-bottom: rem(3) solid var(--main);
+  font-size: rem(16);
+  font-weight: var(--bold);
+  line-height: 1.5;
+  padding-bottom: rem(10);
+  border-bottom: rem(3) solid var(--main);
+
+  @include mq("md") {
+    font-size: rem(24);
+  }
+}
+
+.p-faq__frame-text {
+  margin-top: rem(20);
+  font-size: rem(16);
+  font-weight: var(--medium);
+  line-height: 1.8;
+
+  @include mq("md") {
+    margin-top: rem(76);
+    line-height: 2;
+  }
+}
+
+.p-faq__button {
+  margin-top: rem(50);
+
+  @include mq("md") {
+    margin-top: rem(100);
+  }
+}
