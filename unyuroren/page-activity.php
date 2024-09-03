@@ -9,7 +9,6 @@
   <div class="p-sub-activity l-common">
     <div class="p-sub-activity__inner l-inner">
       <?php the_content(); ?>
-      </a>
     </div>
   </div>
 

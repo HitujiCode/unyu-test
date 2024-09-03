@@ -56,7 +56,7 @@
             'modal' => [
               ['text' => '設立目的', 'modal_link' => 'info/about'],
               ['text' => '所在地', 'modal_link' => 'info/place'],
-              ['text' => '運輸労連 加盟組合一覧', 'modal_link' => 'https://www.unyuroren.or.jp/home/info/kameikumiai.htm'],
+              ['text' => '運輸労連 加盟組合一覧', 'modal_link' => 'https://www.unyuroren.or.jp/home/info/kameikumiai.htm', 'is_blank' => 'true'],
             ],
           ],
           [
@@ -119,7 +119,20 @@
                         <ul class="p-header__nav-modal-list">
                           <?php foreach ($item['modal'] as $modalItem): ?>
                             <li class="p-header__nav-modal-item">
-                              <a href="<?php page_path($modalItem['modal_link']); ?>"><?php echo esc_html($modalItem['text']); ?></a>
+                              <?php
+                              if (filter_var($modalItem['modal_link'], FILTER_VALIDATE_URL)) {
+                                // 外部リンクの場合
+                                $link = esc_url($modalItem['modal_link']);
+                                $target = ' target="_blank"';
+                              } else {
+                                // 内部リンクの場合
+                                ob_start();
+                                page_path($modalItem['modal_link']);
+                                $link = ob_get_clean();
+                                $target = '';
+                              }
+                              ?>
+                              <a href="<?php echo $link; ?>" <?php echo $target; ?>><?php echo esc_html($modalItem['text']); ?></a>
                             </li>
                           <?php endforeach; ?>
                         </ul>

@@ -143,7 +143,7 @@
   margin-top: rem(24);
 
   @include mq("md") {
-    margin-top: mre(35);
+    margin-top: rem(35);
   }
 }
 
