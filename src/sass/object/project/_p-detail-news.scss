@@ -33,9 +33,11 @@
 
 .p-detail-news__thumbnail {
   margin-top: rem(30);
+  margin-inline: auto;
 
   @include mq("md") {
     margin-top: rem(90);
+    max-width: 60%;
   }
 }
 
@@ -67,6 +69,10 @@
   @include mq("md") {
     margin-top: rem(50);
   }
+}
+
+.p-detail-news__content p+.wp-block-image {
+  margin-top: rem(50);
 }
 
 .p-detail-news__button {

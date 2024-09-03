@@ -1,9 +1,5 @@
 @use "global" as *;
 
-.wp-block-image {
-  margin-top: rem(50);
-}
-
 :where(.wp-block-columns) {
   margin-bottom: rem(30);
 
@@ -130,10 +126,11 @@
   }
 }
 
-blockquote {
+.wp-block-quote {
+  margin-top: rem(30);
   background-color: var(--bg-light-gray);
   border-radius: rem(10);
-  padding: rem(30) rem(20);
+  padding: rem(26) rem(20);
   font-size: rem(16);
   line-height: 2;
 

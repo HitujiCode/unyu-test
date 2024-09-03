@@ -127,10 +127,10 @@
 
     <?php
     $args = array(
-      'text' => '「改善基準告示」とは自動車運転者の労働時間等の労働条件の改善をするために労働大臣が1989年2月に告示したものの略称です。さらに一部改正され、現行基準は2024年4月1日から適用されています。',
+      'text' => '運輸労連機関誌2013年12月号から2015年12月号まで連載されたものです。',
       'img' => array(
-        'src' => 'http://unyuroren.local/wp-content/themes/unyuroren/assets/images/top/mv1.jpg',
-        'alt' => '改善基準告示の画像'
+        'src' => '/pr/journal_fv.jpg',
+        'alt' => '折りたたまれた雑誌が重なっている写真'
       )
     );
     get_template_part('parts/project/p-fv-block', null, $args);

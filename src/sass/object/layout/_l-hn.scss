@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.l-h1 {
+.l-mtb1 {
   margin-top: rem(50);
   margin-bottom: rem(30);
 
@@ -10,29 +10,9 @@
   }
 }
 
-.l-h2 {
-  margin-top: rem(50);
-  margin-bottom: rem(30);
-
-  @include mq("md") {
-    margin-top: rem(70);
-    margin-bottom: rem(50);
-  }
-}
-
-.l-h3 {
+.l-mtb2 {
   margin-top: rem(40);
-  margin-bottom: rem(40);
-
-  @include mq("md") {
-    margin-top: rem(50);
-    margin-bottom: rem(30);
-  }
-}
-
-.l-h4 {
-  margin-top: rem(40);
-  margin-bottom: rem(40);
+  margin-bottom: rem(20);
 
   @include mq("md") {
     margin-top: rem(50);

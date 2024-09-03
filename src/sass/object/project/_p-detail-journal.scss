@@ -1,0 +1,98 @@
+@use "global" as *;
+
+.p-detail-journal {
+  font-size: rem(16);
+  font-weight: var(--medium);
+  line-height: 2;
+}
+
+.p-detail-journal__inner.l-inner {}
+
+.p-detail-journal__container {}
+
+.p-detail-journal p:not([class]) {
+  margin-top: rem(30);
+
+}
+
+.p-detail-journal .wp-block-quote p {
+  margin-top: 0;
+}
+
+.p-detail-journal ul {
+  font-weight: var(--bold);
+}
+
+.p-detail-journal li {
+  position: relative;
+  padding-left: 1em;
+}
+
+.p-detail-journal li::before {
+  content: "・";
+  position: absolute;
+  left: 0;
+}
+
+.p-detail-journal .wp-block-image {
+  margin-top: rem(30);
+}
+
+.p-detail-journal__pagination {
+  margin-top: rem(40);
+
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
+
+.p-detail-journal__pagination .nav-links {
+  display: flex;
+}
+
+.p-detail-journal__pagination .nav-next {
+  margin-left: auto;
+}
+
+.p-detail-journal__pagination .nav-previous a,
+.p-detail-journal__pagination .nav-next a {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: rem(12);
+  align-items: center;
+  font-size: rem(16);
+  font-weight: var(--bold);
+  line-height: calc(29/20);
+
+  @include mq("md") {
+    gap: rem(18);
+    font-size: rem(20);
+  }
+}
+
+.p-detail-journal__pagination .nav-previous a::before,
+.p-detail-journal__pagination .nav-next a::after {
+  content: "";
+  background-image: url(../images/common/arrow.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: rem(14);
+  aspect-ratio: 17/15;
+
+  @include mq("md") {
+    width: rem(17);
+  }
+}
+
+.p-detail-journal__pagination .nav-previous a::before {
+  transform: scale(-1);
+}
+
+.p-detail-journal__button {
+  margin-top: rem(50);
+
+  @include mq("md") {
+    margin-top: rem(80);
+  }
+}
