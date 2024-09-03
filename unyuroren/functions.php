@@ -25,6 +25,7 @@ get_template_part('parts/functions-lib/func-enqueue-assets');
 // 投稿のラベルを変更
 get_template_part('parts/functions-lib/func-add-posttype-post');
 
+
 // エディターを非表示
 // function my_custom_init()
 // {

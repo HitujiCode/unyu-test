@@ -4,7 +4,7 @@
 
   <?php get_template_part('parts/component/c-breadcrumb') ?>
 
-  <h1 class="l-h1">広報</h1>
+  <h1 class="l-mtb1">広報</h1>
 
   <section class="p-sub-publication">
     <div class="p-sub-publication__inner l-inner">
@@ -32,7 +32,7 @@
         $args = array(
           'link' => '/contact',
           'text' => 'お問い合わせはこちら',
-          'modifier' => 'blank'
+          'modifier' => ''
         );
         get_template_part('parts/component/c-button', null, $args);
         ?>

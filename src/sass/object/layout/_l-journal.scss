@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.l-journal {
+  margin-top: rem(50);
+
+  @include mq("md") {
+    margin-top: rem(100);
+  }
+}

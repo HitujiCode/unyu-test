@@ -7,7 +7,7 @@
   gap: rem(16);
   align-items: center;
   text-align: center;
-  padding: rem(10) rem(24);
+  padding: rem(8) rem(24);
   font-size: rem(16);
   font-weight: var(--bold);
   color: var(--main);
@@ -53,13 +53,7 @@
 }
 
 .c-button--blank {
-  font-size: rem(14);
-  line-height: 1.5;
-  padding: rem(14) rem(40);
-
-  @include mq("md") {
-    padding-block: rem(22);
-  }
+  padding-inline: rem(40);
 }
 
 .c-button--blank::after {

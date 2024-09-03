@@ -7,7 +7,7 @@ $img = isset($args['img']) ? $args['img'] : array('src' => '', 'alt' => '');
   <div class="p-fv-block__inner l-inner">
     <figure class="p-fv-block__img">
       <img
-        src="<?php echo esc_url($img['src']); ?>"
+        src="<?php img_path($img['src']); ?>"
         alt="<?php echo esc_attr($img['alt']); ?>"
         width="400" height="248" />
     </figure>

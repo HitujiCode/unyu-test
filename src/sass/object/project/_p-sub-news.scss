@@ -43,3 +43,7 @@
     margin-top: rem(100);
   }
 }
+
+.p-sub-news__pagination:not(:has(.wp-pagenavi)) {
+  display: none;
+}
