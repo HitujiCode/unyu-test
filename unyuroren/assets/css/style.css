@@ -1892,13 +1892,6 @@ select::-ms-expand {
 	line-height: 1;
 }
 
-.p-mv {
-	background-color: #EBF6EF;
-	background-color: var(--bg-light-green);
-	overflow: clip;
-	padding: 1.25rem;
-}
-
 .p-mv__container {
 	height: -moz-fit-content;
 	height: fit-content;
