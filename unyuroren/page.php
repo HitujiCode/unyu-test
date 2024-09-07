@@ -4,7 +4,7 @@
 
   <?php get_template_part('parts/component/c-breadcrumb') ?>
 
-  <h1 class="l-mtb1"><?php the_title(); ?></h1>
+  <h1 class="l-mtb1"><?php the_title(); ?>aaa</h1>
 
   <div class="l-inner">
     <?php the_content(); ?>

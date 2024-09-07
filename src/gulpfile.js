@@ -224,7 +224,7 @@ const browserSyncOption = {
   notify: false,
   // server: "../dist/", // ローカルサーバーのルートディレクトリ
   //WordPressの場合は↓を有効にする。その場合、↑(server)はコメントアウトする。
-  proxy: "http://unyuroren.local/", // ローカルサーバーのURL（WordPress）
+  proxy: "http://unyu-test.local/", // ローカルサーバーのURL（WordPress）
 };
 const browserSyncFunc = () => {
   browserSync.init(browserSyncOption);
