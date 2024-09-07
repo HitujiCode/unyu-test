@@ -3,10 +3,10 @@ src/node_modules/
 package-lock.json/
 /.DS_Store/
 dist
-WordPressTheme/assets
-WordPressTheme/node_modules
-WordPressTheme/package-lock.json
-WordPressTheme/.DS_Store
+unyuroren/assets
+unyuroren/node_modules
+unyuroren/package-lock.json
+unyuroren/.DS_Store
 src/node_modules/
 .DS_Store
 node_modules
